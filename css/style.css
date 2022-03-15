@@ -1,0 +1,510 @@
+/* Erebos#5967 */
+body{
+    background-color: #151515;
+    color: #2e9fcc;
+    font-family: 'Open Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    overflow: hidden; /* Site Aşağı Kaymasını Engeller. */
+}
+::-webkit-scrollbar { display: none; } 
+
+/* Textlerin Başlangıcı */
+p{
+    color: #b41230;
+    text-shadow: 0px 0px 3px #8ab4c5cb;
+    font-size: 30px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: '';
+    color: white;
+}
+/* Textlerin Bitişi */
+
+
+
+/* Discord'un Widget Başlangıcı */
+.dcwidget{
+  position: relative;
+  bottom: 100px;
+  right: 20px;
+}
+/* Discord'un Widget Başlangıcı */
+
+
+/* Arama Kutusu (SearchBox)'un Başlangıcı. */
+.box{
+    width: 300px;
+    padding-bottom: 92px;
+    position: absolute;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.searchtext{
+    width: 300px;
+}
+
+.box input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ef92a3;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #ef92a3;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus{
+    width: 280px;
+    border-color: #b41230;
+}
+/* Arama Kutusu (SearchBox)'un Bitişi. */
+
+
+
+/* Social Media Butons Başlangıcı*/
+.wrapper {
+    position: absolute;
+    bottom: 88%;
+    right: 60%;
+    width: 565px;
+  }
+  
+
+  .wrapper ul {
+    list-style: none;
+  }
+  
+
+  .wrapper ul li {
+    width: 40px;
+    height: 40px;
+    line-height: 75px;
+    margin: 0 3px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #b41230;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  
+
+  .wrapper ul li i {
+    color: #b41230;
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  
+
+  .wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 10px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 10px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 10px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 10px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 10px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 10px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 10px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 10px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  /* whatsapp */
+  .wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 10px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 10px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  
+  /* media queries */
+  
+  @media screen and (max-width: 640px){
+    .wrapper {
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 340px){
+    .wrapper {
+        width: 150px;
+    }
+    .wrapper ul li{
+        margin:15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+  }
+/* Social Media Butons Bitişi.*/  
+
+
+/*Card*/
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.card {
+  font-family: Abel, Arial, Verdana, sans-serif;
+  width: 450px;
+  height: 250px;
+  bottom: 400px;
+  left: 860px;
+  background-color: #202020;
+  background: linear-gradient(#151515, #b412308f);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#b41230, #eb5f52);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+/*Card*/
+
+/* Skils Bars Başlangıcı */
+.skill-bars{
+    margin-left: 25%;
+    margin-bottom: -750px;
+    padding: 25px 30px;
+    width: 600px; background: rgba(255, 255, 255, 0);
+    box-shadow: 0px 5px 20px #b41230;
+    border-radius: 10px;  
+ }
+ .bar{ margin: 20px 0; }
+ .bar:first-child{ margin-top: 0; }
+ .info{ margin-bottom: 0; }
+ .info span{
+     font-weight: 500;
+     color: #b41230;
+     font-size: 17px; opacity: 0;
+     animation: showText .5s 1s linear forwards;
+ }
+ @keyframes showText {
+     100%{
+         opacity: 1;
+     }
+ }
+ .progress-line{
+     height: 10px; width: 100%;
+     background: #ef92a3; position: relative;
+     transform: scaleX(0); transform-origin: left;
+     border-radius: 10px;
+     box-shadow: inset 0 1px 1px #b41230,
+     0 1px #ef92a3;
+     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+ .progress-line span{
+     height: 100%; position: absolute;
+     border-radius: 10px;
+     transform: scaleX(0);
+     transform-origin: left;
+     background: #b41230;
+     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+ .progress-line span::before{
+     position: absolute; content: "";
+     top:-10px; right: 0; height: 0;
+     width: 0; opacity: 0;
+     border: 7px solid transparent;
+     border-bottom-width: 0;
+     border-right-width: 0;
+     border-top-color: #b41230;
+     animation: showText2 .5s 1.5s linear forwards;
+ }
+ .progress-line span::after{
+     position: absolute; 
+     top:-28px; right: 0; font-weight: 500;
+     background: #b41230;
+     color:#151515; opacity: 0;
+     padding: 1.5px 8px;
+     font-size: 12px;
+     border-radius: 3px;
+     animation: showText2 .5s 1.5s linear forwards;
+ }
+ @keyframes animate {
+     100%{
+         transform: scaleX(1);
+     }    
+ }
+ .html span{ 
+     width: 100%; 
+ }
+ .css span{
+     width: 100%; 
+ }
+ .js span{
+     width: 100%; 
+ }
+
+ .html span::after{
+     content: "100%"; 
+ }
+ .css span::after{
+     content: "100%"; 
+ }
+ .js span::after{
+     content: "100%"; 
+ }
+ @keyframes showText2 {
+     100%{
+         opacity: 1;
+     }
+ }
+ /* Skils Bars Bitişi */
+
+ /* profiles */
+
+
+
+.açelyatext a {
+  font-size: 20px;
+  color: #b41230;
+  text-decoration: none;
+}
+
+.açelyatext a:hover {
+  font-size: 20px;
+  color: #ef92a3;
+  text-decoration: underline;
+  transition: 300ms all;
+}
+
+
+nav {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #181818;
+    border-radius: 8px;
+    color: #b41230;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    float: none;
+    z-index: 1;
+    text-shadow: 0px 0px 5px #b412308c;
+    display: inline-block;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/* Navbar başlangıcı */
+.navbar {
+background: #151515;
+box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+height: 60px;
+width: 100%;
+position: fixed;
+bottom: 0;
+right: 0.3px;
+}
+
+.navbar a.active {
+  float: left;
+}
+/* Navbar Bitişi */ 
